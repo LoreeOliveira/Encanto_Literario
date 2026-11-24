@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 Encanto Literário
+# 📜 Encanto Literário 🪶
 
 **Sistema Web Administrativo para Gerenciamento de Catálogo Digital de Livros e Autores**
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 📖 Sobre a Encanto Literário
+## 📖 Sobre a Encanto Literário ☕️
 
 A **Encanto Literário** é uma livraria 100% digital que nasceu do amor pelos livros, com o propósito de aproximar leitores de grandes histórias por meio de um **catálogo digital organizado, prático e intuitivo**.
 
@@ -151,5 +151,5 @@ Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) no **Curso Técn
 ---
 
 <div align="center">
-  <sub>Desenvolvido com dedicação pela equipe <strong>Encanto Literário</strong> 📚</sub>
+  <sub>Desenvolvido com dedicação pela equipe <strong>Encanto Literário</strong> 📚✨</sub>
 </div>
