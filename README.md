@@ -17,12 +17,12 @@
 
 ## 📖 Sobre a Encanto Literário
 
-A **Encanto Literário** é uma livraria 100% digital que nasceu do amor pelos livros, com o propósito de aproximar leitores de grandes histórias por meio de um **catálogo digital organizado, prático e intuitivo**
+A **Encanto Literário** é uma livraria 100% digital que nasceu do amor pelos livros, com o propósito de aproximar leitores de grandes histórias por meio de um **catálogo digital organizado, prático e intuitivo**.
 
-Este repositório contém o **sistema web administrativo** desenvolvido para substituir controles manuais e planilhas estáticas por uma plataforma centralizada, segura e responsiva para a gestão completa de escritores e obras literárias
+Este repositório contém o **sistema web administrativo** desenvolvido para substituir controles manuais e planilhas estáticas por uma plataforma centralizada, segura e responsiva para a gestão completa de escritores e obras literárias.
 
 ### ✨ Nossa Identidade
-* **🎯 Missão:** Facilitar o acesso à leitura no ambiente digital
+* **🎯 Missão:** Facilitar o acesso à leitura no ambiente digital.
 * **🔭 Visão:** Ser referência como livraria digital pela organização e experiência do cliente.
 * **💛 Valores:** Paixão pela literatura, simplicidade, transparência e inovação.
 
@@ -30,7 +30,7 @@ Este repositório contém o **sistema web administrativo** desenvolvido para sub
 
 ## 🚀 Funcionalidades Principais
 
-* **🔐 Autenticação e Controle de Sessão:** Login administrativo com senhas criptografadas em `bcrypt` (`password_hash` / `password_verify`), proteção de rotas internas (`verifica_login.php`) e criação automática do usuário padrão na inicialização
+* **🔐 Autenticação e Controle de Sessão:** Login administrativo com senhas criptografadas em `bcrypt` (`password_hash` / `password_verify`), proteção de rotas internas (`verifica_login.php`) e criação automática do usuário padrão na inicialização.
 * **🧭 Painel de Navegação Rápida:** Tela inicial protegida com cartões de acesso direto aos módulos de **Autores**, **Livros** e **Catálogo Digital**.
 * **✍️ Gestão de Autores (CRUD):** Cadastro, listagem alfabética, edição e exclusão de escritores (nome, gênero literário, país de origem e foto), com bloqueio de exclusão caso existam obras vinculadas (`ON DELETE RESTRICT`).
 * **📘 Gestão de Livros (CRUD):** Cadastro completo vinculado obrigatoriamente a um autor, incluindo título, editora, gênero, sinopse, capa e link externo de referência/compra.
@@ -130,20 +130,15 @@ CREATE TABLE livros (
 
 ---
 
-## ⚙️ Como Executar Localmente
+## 👥 Equipe de Desenvolvimento
 
-1. **Clone o repositório** na pasta pública do seu servidor local (ex.: `htdocs/` no XAMPP):
-   ```bash
-   git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
-   ```
-2. **Ative o Apache e o MySQL** no painel do servidor local e certifique-se de que a extensão `gd` esteja habilitada no `php.ini`[cite: 14].
-3. **Crie o banco de dados** executando o script SQL acima no phpMyAdmin ou MySQL Workbench.
-4. **Configure as credenciais** do banco em `conexao.php` (se necessário).
-5. **Acesse no navegador:**
-   ```text
-   http://localhost/Sistema_de_livros/login.php
-   ```
-   > 💡 Na primeira conexão, o arquivo `conexao.php` cria automaticamente o usuário `admin` padrão com senha criptografada em `bcrypt`.
+Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) no **Curso Técnico em Desenvolvimento de Sistemas** — **Escola SENAI A. Jacob Lafer** (Santo André, SP — 2026), sob orientação do **Prof. Dênis**.
+
+* **Eloísa de Oliveira Ventura**
+* **Gabriel Pereira Dias**
+* **Gustavo Schimming**
+* **Lorena Sousa de Oliveira**
+* **Vitor Rodrigues Santos**
 
 ---
 
@@ -155,6 +150,6 @@ CREATE TABLE livros (
 
 ---
 
-## 👥 Equipe de Desenvolvimento
-
-Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) no **Curso Técnico em Desenvolvimento de Sistemas** — **Escola SENAI A. Jacob Lafer** (Santo André, SP — 2026), sob orientação do **Prof. Dênis**
+<div align="center">
+  <sub>Desenvolvido com dedicação pela equipe <strong>Encanto Literário</strong> 📚</sub>
+</div>
