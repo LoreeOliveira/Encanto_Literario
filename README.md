@@ -17,12 +17,12 @@
 
 ## 📖 Sobre a Encanto Literário
 
-A **Encanto Literário** é uma livraria 100% digital que nasceu do amor pelos livros, com o propósito de aproximar leitores de grandes histórias por meio de um **catálogo digital organizado, prático e intuitivo**[cite: 7, 25].
+A **Encanto Literário** é uma livraria 100% digital que nasceu do amor pelos livros, com o propósito de aproximar leitores de grandes histórias por meio de um **catálogo digital organizado, prático e intuitivo**
 
-Este repositório contém o **sistema web administrativo** desenvolvido para substituir controles manuais e planilhas estáticas por uma plataforma centralizada, segura e responsiva para a gestão completa de escritores e obras literárias[cite: 4].
+Este repositório contém o **sistema web administrativo** desenvolvido para substituir controles manuais e planilhas estáticas por uma plataforma centralizada, segura e responsiva para a gestão completa de escritores e obras literárias
 
 ### ✨ Nossa Identidade
-* **🎯 Missão:** Facilitar o acesso à leitura no ambiente digital[cite: 23].
+* **🎯 Missão:** Facilitar o acesso à leitura no ambiente digital
 * **🔭 Visão:** Ser referência como livraria digital pela organização e experiência do cliente.
 * **💛 Valores:** Paixão pela literatura, simplicidade, transparência e inovação.
 
@@ -30,35 +30,35 @@ Este repositório contém o **sistema web administrativo** desenvolvido para sub
 
 ## 🚀 Funcionalidades Principais
 
-* **🔐 Autenticação e Controle de Sessão:** Login administrativo com senhas criptografadas em `bcrypt` (`password_hash` / `password_verify`), proteção de rotas internas (`verifica_login.php`) e criação automática do usuário padrão na inicialização[cite: 4, 15, 17, 18].
-* **🧭 Painel de Navegação Rápida:** Tela inicial protegida com cartões de acesso direto aos módulos de **Autores**, **Livros** e **Catálogo Digital**[cite: 14, 16, 27].
-* **✍️ Gestão de Autores (CRUD):** Cadastro, listagem alfabética, edição e exclusão de escritores (nome, gênero literário, país de origem e foto), com bloqueio de exclusão caso existam obras vinculadas (`ON DELETE RESTRICT`)[cite: 16, 19, 20].
-* **📘 Gestão de Livros (CRUD):** Cadastro completo vinculado obrigatoriamente a um autor, incluindo título, editora, gênero, sinopse, capa e link externo de referência/compra[cite: 16, 20, 21].
-* **🔎 Busca Dinâmica e Filtros Combináveis:** Pesquisa em tempo real por termo geral (título, editora ou autor), filtro por autor e filtro por gênero literário, com preservação dos filtros ativos após edições e alertas visuais de feedback[cite: 16, 17, 22].
-* **🖼️ Processamento Automático de Mídia:** Validação real de tipo MIME (`JPG` e `PNG` até 5 MB), redimensionamento proporcional automático no servidor via **PHP GD** (`400×400 px` para autores e `400×600 px` para capas), nomes únicos (`uniqid`) e remoção física automática de arquivos antigos (`unlink`)[cite: 17, 19, 22].
+* **🔐 Autenticação e Controle de Sessão:** Login administrativo com senhas criptografadas em `bcrypt` (`password_hash` / `password_verify`), proteção de rotas internas (`verifica_login.php`) e criação automática do usuário padrão na inicialização
+* **🧭 Painel de Navegação Rápida:** Tela inicial protegida com cartões de acesso direto aos módulos de **Autores**, **Livros** e **Catálogo Digital**.
+* **✍️ Gestão de Autores (CRUD):** Cadastro, listagem alfabética, edição e exclusão de escritores (nome, gênero literário, país de origem e foto), com bloqueio de exclusão caso existam obras vinculadas (`ON DELETE RESTRICT`).
+* **📘 Gestão de Livros (CRUD):** Cadastro completo vinculado obrigatoriamente a um autor, incluindo título, editora, gênero, sinopse, capa e link externo de referência/compra.
+* **🔎 Busca Dinâmica e Filtros Combináveis:** Pesquisa em tempo real por termo geral (título, editora ou autor), filtro por autor e filtro por gênero literário, com preservação dos filtros ativos após edições e alertas visuais de feedback.
+* **🖼️ Processamento Automático de Mídia:** Validação real de tipo MIME (`JPG` e `PNG` até 5 MB), redimensionamento proporcional automático no servidor via **PHP GD** (`400×400 px` para autores e `400×600 px` para capas), nomes únicos (`uniqid`) e remoção física automática de arquivos antigos (`unlink`).
 
 ---
 
 ## 🎨 Identidade Visual
 
-A interface foi construída em **HTML5 semântico**, **CSS3 puro** (Flexbox, CSS Grid e variáveis `:root`) e ícones vetoriais **SVG inline**, utilizando uma paleta editorial quente que remete ao universo literário[cite: 10, 11]:
+A interface foi construída em **HTML5 semântico**, **CSS3 puro** (Flexbox, CSS Grid e variáveis `:root`) e ícones vetoriais **SVG inline**, utilizando uma paleta editorial quente que remete ao universo literário:
 
 | Cor | Hexadecimal | Uso Principal |
 | :--- | :---: | :--- |
-| 🟤 **Marrom Escuro** | `#594236` | Cabeçalhos, tipografia de destaque e estrutura[cite: 11] |
-| 🟡 **Dourado Envelhecido** | `#D49242` | Botões primários, detalhes e ícones[cite: 11] |
-| 🟠 **Âmbar** | `#E5AC59` | Realces, *hover* e elementos secundários[cite: 11] |
-| ⚪ **Bege Claro** | `#F4F1EA` | Fundo editorial suave para conforto de leitura[cite: 11] |
+| 🟤 **Marrom Escuro** | `#594236` | Cabeçalhos, tipografia de destaque e estrutura |
+| 🟡 **Dourado Envelhecido** | `#D49242` | Botões primários, detalhes e ícones |
+| 🟠 **Âmbar** | `#E5AC59` | Realces, *hover* e elementos secundários |
+| ⚪ **Bege Claro** | `#F4F1EA` | Fundo editorial suave para conforto de leitura |
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Front-end:** HTML5, CSS3 (`style.css` global e responsivo) e SVG inline[cite: 10, 11, 14].
-* **Back-end:** PHP 8 (código modularizado, extensão `MySQLi`, extensão `GD` e expressões regulares)[cite: 14, 18].
-* **Banco de Dados:** MySQL (`InnoDB`, codificação `utf8mb4_unicode_ci`) com consultas protegidas por *Prepared Statements* (`bind_param`) contra *SQL Injection*[cite: 14, 17, 19].
-* **Servidor Local:** Apache (XAMPP / WAMP / Laragon)[cite: 14].
-* **Metodologia:** Desenvolvimento Ágil iterativo e incremental estruturado em **2 Sprints** (Sprint 1: prototipação e UI/UX; Sprint 2: *back-end*, segurança e integração MySQL)[cite: 14].
+* **Front-end:** HTML5, CSS3 (`style.css` global e responsivo) e SVG inline.
+* **Back-end:** PHP 8 (código modularizado, extensão `MySQLi`, extensão `GD` e expressões regulares).
+* **Banco de Dados:** MySQL (`InnoDB`, codificação `utf8mb4_unicode_ci`) com consultas protegidas por *Prepared Statements* (`bind_param`) contra *SQL Injection*.
+* **Servidor Local:** Apache (XAMPP / WAMP / Laragon).
+* **Metodologia:** Desenvolvimento Ágil iterativo e incremental estruturado em **2 Sprints** (Sprint 1: prototipação e UI/UX; Sprint 2: *back-end*, segurança e integração MySQL).
 
 ---
 
@@ -79,13 +79,13 @@ Sistema_de_livros/
 └── uploads/
     ├── autores/           # Fotos dos escritores (400×400 px)
     └── capas/             # Capas dos livros (400×600 px)
-```[cite: 14, 15]
+```
 
 ---
 
 ## 🗄️ Modelagem do Banco de Dados
 
-O banco `encanto_literario` possui três tabelas principais (`usuarios`, `autores` e `livros`), com relacionamento **1:N** entre `autores` e `livros` garantindo integridade referencial[cite: 12, 19, 20].
+O banco `encanto_literario` possui três tabelas principais (`usuarios`, `autores` e `livros`), com relacionamento **1:N** entre `autores` e `livros` garantindo integridade referencial.
 
 <details>
 <summary>📄 Clique para visualizar o Script SQL (DDL)</summary>
@@ -126,7 +126,7 @@ CREATE TABLE livros (
 ) ENGINE=InnoDB;
 ```
 
-</details>[cite: 20, 21]
+</details>
 
 ---
 
@@ -137,24 +137,24 @@ CREATE TABLE livros (
    git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
    ```
 2. **Ative o Apache e o MySQL** no painel do servidor local e certifique-se de que a extensão `gd` esteja habilitada no `php.ini`[cite: 14].
-3. **Crie o banco de dados** executando o script SQL acima no phpMyAdmin ou MySQL Workbench[cite: 20, 21].
-4. **Configure as credenciais** do banco em `conexao.php` (se necessário)[cite: 15].
+3. **Crie o banco de dados** executando o script SQL acima no phpMyAdmin ou MySQL Workbench.
+4. **Configure as credenciais** do banco em `conexao.php` (se necessário).
 5. **Acesse no navegador:**
    ```text
    http://localhost/Sistema_de_livros/login.php
    ```
-   > 💡 Na primeira conexão, o arquivo `conexao.php` cria automaticamente o usuário `admin` padrão com senha criptografada em `bcrypt`[cite: 18, 19, 26].
+   > 💡 Na primeira conexão, o arquivo `conexao.php` cria automaticamente o usuário `admin` padrão com senha criptografada em `bcrypt`.
 
 ---
 
 ## 🗺️ Melhorias Futuras (Roadmap)
 
-* [ ] Implementação de múltiplos níveis de acesso (**Administrador** e **Leitor**)[cite: 22].
-* [ ] Módulo de recuperação de senha por e-mail[cite: 22].
-* [ ] Geração de relatórios estatísticos do catálogo digital em **PDF**[cite: 22].
+* [ ] Implementação de múltiplos níveis de acesso (**Administrador** e **Leitor**).
+* [ ] Módulo de recuperação de senha por e-mail.
+* [ ] Geração de relatórios estatísticos do catálogo digital em **PDF**.
 
 ---
 
 ## 👥 Equipe de Desenvolvimento
 
-Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) no **Curso Técnico em Desenvolvimento de Sistemas** — **Escola SENAI A. Jacob Lafer** (Santo André, SP — 2026), sob orientação do **Prof. Dênis**[cite: 2, 3]
+Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC) no **Curso Técnico em Desenvolvimento de Sistemas** — **Escola SENAI A. Jacob Lafer** (Santo André, SP — 2026), sob orientação do **Prof. Dênis**
